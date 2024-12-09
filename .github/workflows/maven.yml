@@ -32,7 +32,9 @@ jobs:
     - name: List the files
       run: |
         ls -lrtha
-        cd target
+        cd sbr-client/target
+        ls -lrtha
+        cd sbr-app/target
         ls -lrtha
     - name: Upload the artifact
       uses: actions/upload-artifact@v4
